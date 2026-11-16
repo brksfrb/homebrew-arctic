@@ -15,10 +15,10 @@ cask "arctic-launcher" do
   app "Arctic Launcher.app"
 
   # Not notarized yet: clear the download flag so macOS opens it without the warning.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Arctic Launcher.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Arctic Launcher.app"],
+        sudo: false
   end
 end
 
