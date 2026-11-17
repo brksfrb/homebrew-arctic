@@ -1,6 +1,6 @@
 cask "arctic-launcher" do
-  version "0.6.3"
-  sha256 "bcfc2b6df3d36ccf0da075b687bd6dae06373f71c97a4c0075a36e9da7c633a0"
+  version "0.6.4"
+  sha256 "cd675de20f7cd76e68fdba12f32684aa4889a0527cf430499afe98c4d0c83553"
 
   url "https://github.com/brksfrb/arctic-launcher/releases/download/v#{version}/arctic-launcher-macos.zip"
   name "Arctic Launcher"
